@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 {
     std::string algorithm;
     std::cout << "Choose an algorithm: \n" <<
-        "quickfind|quickunion|weightedquickunion" << std::endl;
+        "quickfind | quickunion | weightedquickunion" << std::endl;
     std::cin >> algorithm;
 
     std::ifstream fin(argv[1]);

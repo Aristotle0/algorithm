@@ -7,7 +7,7 @@ UFSimpleFactory::createUF(const std::string &algorithm, int N)
     if (algorithm == "quickfind") {
         return std::make_shared<QuickFindUF>(N);
     }
-    else if (algorithm == "unionfind"){
+    else if (algorithm == "quickunion"){
         return std::make_shared<QuickUnionUF>(N);
     } else {
         throw;
