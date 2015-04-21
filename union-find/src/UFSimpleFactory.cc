@@ -1,10 +1,15 @@
 #include "UFSimpleFactory.h"
 #include "QuickFindUF.h"
-
+#include "QuickUnionUF.h"
 std::shared_ptr<UFBase>
 UFSimpleFactory::createUF(const std::string &algorithm, int N)
 {
-    if (algorithm == "unionfind") {
+    if (algorithm == "quickfind") {
         return std::make_shared<QuickFindUF>(N);
+    }
+    else if (algorithm == "unionfind"){
+        return std::make_shared<QuickUnionUF>(N);
+    } else {
+        throw;
     }
 }

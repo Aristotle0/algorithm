@@ -5,8 +5,8 @@
 class UFBase
 {
 public:
+    UFBase();
     UFBase(int n);
-    int get_count();
     bool connected(int p, int q);
     void show();
     virtual void union2(int, int) = 0;

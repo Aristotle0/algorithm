@@ -9,12 +9,6 @@ UFBase::UFBase(int n)
     count = n;
 }
 
-int
-UFBase::get_count()
-{
-    return count;
-}
-
 bool
 UFBase::connected(int p, int q)
 {

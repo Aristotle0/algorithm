@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
     int p, q;
     while (fin >> p >> q) {
         if (uf->connected(p, q)) continue;
-        uf->union(p, q);
+        uf->union2(p, q);
     }
     uf->show();
     return 0;

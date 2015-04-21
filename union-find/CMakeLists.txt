@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(CMAKE_cxx_COMPILER)
+set(CMAKE_CXX_COMPILER "g++")
 project(union-find)
 
 include(CheckCXXCompilerFlag)
@@ -14,3 +14,6 @@ else()
 endif()
 
 add_subdirectory(src)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+

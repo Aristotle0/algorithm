@@ -8,7 +8,7 @@ QuickUnionUF::find(int p)
 }
 
 void
-QuickUnionUF::union(int p, int q)
+QuickUnionUF::union2(int p, int q)
 {
     int pRoot = find(p);
     int qRoot = find(q);
